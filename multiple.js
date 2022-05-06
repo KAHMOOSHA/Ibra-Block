@@ -21,7 +21,7 @@ nodes.forEach((node) => {
     );
   });
 
-=  let controller = new blockchainController(url, port);
+  let controller = new blockchainController(url, port);
   app.get("/resolve", controller.resolve.bind(controller));
   app.get("/nodes", controller.getNodes.bind(controller));
   app.post("/transaction", controller.postTransaction.bind(controller));
